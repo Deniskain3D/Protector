@@ -59,13 +59,13 @@ Performance:
 
 Supported Formats:
 
-* Architecture    PE32 (32-bit)
+**Architecture**   PE32 (32-bit)
 
-* OS bitness  x86 and x64 (through WOW64)
+**OS bitness**  x86 and x64 (through WOW64)
 
-* ASLR    Supported
+**ASLR**    Supported
 
-* DEP Supported
+**DEP** Supported
 
 -------------------------------------------------------------------------
 Limitations:
@@ -86,8 +86,11 @@ Not supported:
 
 May not work correctly:
     Files with self-verification of checksums.
+	
     Files with custom exception handlers at load time.
+	
     Exotic builds with a non-standard section layout.
+	
     Files with a very large number of sections (> 32 without using the
     large preset).
 
@@ -129,7 +132,7 @@ Options can be combined in any order. If no options are provided, the
 default configuration is used: all mechanisms enabled, preset `default`.
 
   Examples:
-
+--------------------------------------------------------
   Protection with default settings
  
 protector.exe application.exe
@@ -151,9 +154,9 @@ protector.exe -nobf -nocr -notprot application.exe
 protector.exe -nobf -nocomp -nocr -notprot application.exe
 
 Output:
+file named <name>_pro.exe next to the source file.
+(original file is not modified).
 
-The result is a file named <name>_pro.exe next to the source file.
-The original file is not modified.
 ----------------------------------------------------------------------------
     License type: shareware
         Copyright Protector v1.0 (c) 2026 by Den aka Quriositer
