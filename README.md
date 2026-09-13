@@ -59,13 +59,13 @@ Performance:
 
 Supported Formats:
 
-Architecture    PE32 (32-bit)
-OS bitness  x86 and x64 (through WOW64)
-Minimum OS  Windows XP
-Recommended OS  Windows 7 or newer
-ASLR    Supported
-DEP Supported
-Digital signature   Not supported (invalidated during processing)
+* Architecture    PE32 (32-bit)
+
+* OS bitness  x86 and x64 (through WOW64)
+
+* ASLR    Supported
+
+* DEP Supported
 
 -------------------------------------------------------------------------
 Limitations:
@@ -73,11 +73,16 @@ Limitations:
 Not supported:
 
     PE32+ (64-bit EXE) — will be rejected with an error message.
-    .NET assemblies — managed code is not native x86.
-    Files with an existing TLS section — will be rejected.
-    Files already protected by other protectors (Themida, VMProtect,
-    Enigma, etc.) — behavior is not guaranteed.
-    Digitally signed files — the signature becomes invalid.
+
+	.NET assemblies — managed code is not native x86.
+    
+	Files with an existing TLS section — will be rejected.
+    
+	Files already protected by other protectors (Themida, VMProtect,
+    
+	Enigma, etc.) — behavior is not guaranteed.
+    
+	Digitally signed files — the signature becomes invalid.
 
 May not work correctly:
     Files with self-verification of checksums.
@@ -104,7 +109,7 @@ This tool is intended for protecting your own software. Using it to
 circumvent the protection of third-party applications violates copyright
 law and is subject to prosecution.
 
-I not reply for result with you use 'protector' eg. damage you hardware or files.
+I do not reply for result with you use 'protector' eg. damage you hardware or files.
 Using it with apply you brain and remember about you risc.
 ----------------------------------------------------------------------------
   Syntax:
@@ -125,19 +130,24 @@ default configuration is used: all mechanisms enabled, preset `default`.
 
   Examples:
 
-# Protection with default settings
+  Protection with default settings
+ 
 protector.exe application.exe
 
-# Maximum protection for a large file
+  Maximum protection for a large file
+  
 protector.exe -flarge application.exe
 
-# Protection without debugging resistance (for testing)
+  Protection without debugging resistance (for testing)
+
 protector.exe -notprot application.exe
 
-# Compression only, no other layers
+  Compression only, no other layers
+
 protector.exe -nobf -nocr -notprot application.exe
 
-# Fully disabled — useful for compatibility testing
+  Fully disabled — useful for compatibility testing
+
 protector.exe -nobf -nocomp -nocr -notprot application.exe
 
 Output:
