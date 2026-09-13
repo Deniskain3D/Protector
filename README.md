@@ -1,6 +1,6 @@
  
  
-                       --- 32bit PE Protector v1.0 ---
+##                    --- 32bit PE Protector v1.0 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
