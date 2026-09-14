@@ -1,6 +1,6 @@
  
  
-##                    --- 32bit PE Protector v1.0 ---
+##                    --- 32bit PE Protector v1.1 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
@@ -106,6 +106,12 @@ Tested with output from the following compilers:
 Requirements:
     For processing files: Windows XP or newer, with user privileges for user files.
 
+Version history:
+
+ ** 1.0 - Base version **
+
+ ** 1.1 - Support to all windows Version **
+
 Legal Notice:
 
 This tool is intended for protecting your own software. Using it to
@@ -159,7 +165,7 @@ file named <name>_pro.exe next to the source file.
 
 ----------------------------------------------------------------------------
     License type: shareware
-        Copyright Protector v1.0 (c) 2026 by Den aka Quriositer
+        Copyright Protector v1.1 (c) 2026 by Den aka Quriositer
         Contact:
         My telegram: @Quriositer
         
