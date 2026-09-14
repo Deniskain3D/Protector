@@ -108,9 +108,9 @@ Requirements:
 
 Version history:
 
- ** 1.0 - Base version **
+ **1.0 - Base version**
 
- ** 1.1 - Support to all windows Version **
+ **1.1 - Support to all windows Version**
 
 Legal Notice:
 
