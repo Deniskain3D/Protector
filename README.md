@@ -114,12 +114,12 @@ Version history:
 
 Legal Notice:
 
-This tool is intended for protecting your own software. Using it to
-circumvent the protection of third-party applications violates copyright
+This tool is intended for protecting your own software. Do not using it to
+circumvent the protection of third-party applications which violates copyright
 law and is subject to prosecution.
 
-I do not reply for result with you use 'protector' eg. damage you hardware or files.
-Using it with apply you brain and remember about you risc.
+I`m not respose for the result when you use 'protector' eg. damage you hardware or files.
+Use it with apply you brain and remember about you risc.
 ----------------------------------------------------------------------------
   Syntax:
 protector.exe [options] <target.exe>
