@@ -63,12 +63,12 @@ Supported Formats:
 
 **OS bitness**  x86 and x64 (through WOW64)
 
-**ASLR**    Supported
-
 **DEP** Supported
 
 -------------------------------------------------------------------------
 Limitations:
+
+ ASLR while Disabled for compatibility with protector in this build 
 
 Not supported:
 
