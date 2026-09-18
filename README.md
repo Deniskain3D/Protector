@@ -111,7 +111,7 @@ Version history:
 
  **1.1 - Support to all windows Version**
  
- **1.2 = ASLR full support**
+ **1.2 - ASLR full support**
 
 Legal Notice:
 
