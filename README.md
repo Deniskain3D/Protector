@@ -166,7 +166,7 @@ file named <name>_pro.exe next to the source file.
 
 ----------------------------------------------------------------------------
     License type: shareware
-        Copyright Protector v1.1 (c) 2026 by Den aka Quriositer
+        Copyright Protector v1.2 (c) 2026 by Den aka Quriositer
         Contact:
         My telegram: @Quriositer
         
