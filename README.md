@@ -1,6 +1,6 @@
  
  
-##                    --- 32bit PE Protector v1.1 ---
+##                    --- 32bit PE Protector v1.2 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
@@ -65,10 +65,9 @@ Supported Formats:
 
 **DEP** Supported
 
--------------------------------------------------------------------------
-Limitations:
+**ASLR** Supported
 
- ASLR while Disabled for compatibility with protector in this build 
+-------------------------------------------------------------------------
 
 Not supported:
 
@@ -111,6 +110,7 @@ Version history:
  **1.0 - Base version**
 
  **1.1 - Support to all windows Version**
+ **1.2 = ASLR full support**
 
 Legal Notice:
 
