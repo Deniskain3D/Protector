@@ -1,6 +1,6 @@
  
  
-##                    --- 32bit PE Protector v1.2 ---
+##                    --- 32bit PE Protector v1.5 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
@@ -113,6 +113,8 @@ Version history:
  
  **1.2 - ASLR full support**
 
+ **1.5 - fix bugs, many changes: (new options / some GCC compiled files support / increase cryptolayers)**
+
 Legal Notice:
 
 This tool is intended for protecting your own software. Do not using it to
@@ -125,15 +127,21 @@ Use it with apply you brain and remember about you risc.
   Syntax:
 protector.exe [options] <target.exe>
 
-| Option      | Description                    |
-|-------------|--------------------------------|
-| `-nobf`     | Disable code obfuscation       |
-| `-nocomp`   | Disable section compression    |
-| `-nocr`     | Disable file encryption        |
-| `-notprot`  | Disable debugging resistance   |
-| `-fsmall`   | Preset for files under 100 KB  |
-| `-fdefault` | Default preset (100 KB – 1 MB) |
-| `-flarge`   | Preset for files 1–50 MB       |
+| Option         | Description                    |
+|----------------|--------------------------------|
+| `-nobf`        | Disable code obfuscation       |
+| `-nocomp`      | Disable section compression    |
+| `-nocr`        | Disable file encryption        |
+| `-notprot`     | Disable debugging resistance   |
+| '-nodump       | Disable anti-dump (metad wipe) |
+| '-nowipe       | Disable IAT metadata wipe      |
+| '-needkey <key>| Cust. serial in cmd 255 sym max|
+| `-fsmall`      | Preset for files under 100 KB  |
+| `-fdefault`    | Default preset (100 KB – 1 MB) |
+| `-flarge`      | Preset for files 1–50 MB       |
+
+Default: all enabled, preset = default.
+
 
 Options can be combined in any order. If no options are provided, the
 default configuration is used: all mechanisms enabled, preset `default`.
@@ -166,7 +174,7 @@ file named <name>_pro.exe next to the source file.
 
 ----------------------------------------------------------------------------
     License type: shareware
-        Copyright Protector v1.2 (c) 2026 by Den aka Quriositer
+        Copyright Protector v1.5 (c) 2026 by Den aka Quriositer
         Contact:
         My telegram: @Quriositer
         
