@@ -1,6 +1,6 @@
  
  
-##                    --- 32bit PE Protector v1.5 ---
+##                    --- 32bit PE Protector v1.7 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
@@ -115,6 +115,8 @@ Version history:
 
  **1.5 - fix bugs, many changes: (new options / some GCC compiled files support / increase cryptolayers)**
 
+ **1.7 - Add extended protection options with combine mechanism between them (different License features)**
+
 Legal Notice:
 
 This tool is intended for protecting your own software. Do not using it to
@@ -124,23 +126,32 @@ law and is subject to prosecution.
 I`m not respose for the result when you use 'protector' eg. damage you hardware or files.
 Use it with apply you brain and remember about you risc.
 ----------------------------------------------------------------------------
+
   Syntax:
-protector.exe [options] <target.exe>
 
-| Option         | Description                    |
-|----------------|--------------------------------|
-| `-nobf`        | Disable code obfuscation       |
-| `-nocomp`      | Disable section compression    |
-| `-nocr`        | Disable file encryption        |
-| `-notprot`     | Disable debugging resistance   |
-| '-nodump       | Disable anti-dump (metad wipe) |
-| '-nowipe       | Disable IAT metadata wipe      |
-| '-needkey <key>| Cust. serial in cmd 255 sym max|
-| `-fsmall`      | Preset for files under 100 KB  |
-| `-fdefault`    | Default preset (100 KB – 1 MB) |
-| `-flarge`      | Preset for files 1–50 MB       |
+           Usage: protector.exe [options] <target.exe>
 
-Default: all enabled, preset = default.
+          |      Option        |   Description:                                        |    
+		  |--------------------|-------------------------------------------------------| 
+          | -nobf              | - disable code obfuscation                            |
+          | -nocomp            | - disable compression                                 |
+          | -nocr              | - disable file encryption                             |
+          | -notprot           | - disable debug resistance                            |
+          | -nodump            | - disable anti-dump (metadata wipe)                   |
+          | -nowipe            | - disable IAT metadata wipe                           |
+          | -needkey <key>     | - you custom serial on command line                   |
+          | --nkoneshot        | - save key after first run (needs -needkey)           |
+          | -nklimitruns <n>   | - limit runs <1..255> without key                     |
+          |  (may uses without | -needkey. (256 - is UNRECOVER mode, after 255 runs))  |
+          | -timetolive <d>    | - days since compile (1..365)                         |
+          | -bindmachine       | - bind to registry at first launch                    |
+          | -fsmall            | - small preset   (< 100 KB)                           |
+          | -fdefault          | - default preset (100 KB - 1 MB)                      |
+          | -flarge            | - large preset   (1 MB - 50 MB)                       |
+          |--------------------|-------------------------------------------------------|
+          You can combine keys: -needkey --nkoneshot -nklimitruns -timetolive
+
+          Default: all enabled, preset = default.
 
 
 Options can be combined in any order. If no options are provided, the
@@ -174,7 +185,7 @@ file named <name>_pro.exe next to the source file.
 
 ----------------------------------------------------------------------------
     License type: shareware
-        Copyright Protector v1.5 (c) 2026 by Den aka Quriositer
+        Copyright Protector v1.7 (c) 2026 by Den aka Quriositer
         Contact:
         My telegram: @Quriositer
         
