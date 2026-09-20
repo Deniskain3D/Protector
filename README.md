@@ -130,7 +130,7 @@ Use it with apply you brain and remember about you risc.
   Syntax:
 
            Usage: protector.exe [options] <target.exe>
-
+          ______________________________________________________________________________
           |      Option        |   Description:                                        |    
 		  |--------------------|-------------------------------------------------------| 
           | -nobf              | - disable code obfuscation                            |
@@ -142,7 +142,7 @@ Use it with apply you brain and remember about you risc.
           | -needkey <key>     | - you custom serial on command line                   |
           | --nkoneshot        | - save key after first run (needs -needkey)           |
           | -nklimitruns <n>   | - limit runs <1..255> without key                     |
-          |  (may uses without | -needkey. (256 - is UNRECOVER mode, after 255 runs))  |
+          |  (may uses without | - needkey. (256 - is UNRECOVER mode, after 255 runs)) |
           | -timetolive <d>    | - days since compile (1..365)                         |
           | -bindmachine       | - bind to registry at first launch                    |
           | -fsmall            | - small preset   (< 100 KB)                           |
