@@ -39,7 +39,7 @@ Advantages over classic packers:
 
 Over commercial protectors:
 
-    Small size overhead — the service section occupies less than 20 KB
+    Small size overhead — the service section occupies less than 2 KB
     for a typical file.
 
     Transparent operation — the program behaves identically to the
@@ -149,9 +149,14 @@ protector.exe [options] <target.exe>
           | -flarge            | - large preset   (1 MB - 50 MB)                |
 
           You can combine keys: -needkey --nkoneshot -nklimitruns -timetolive
-
           Default: all enabled, preset = default.
 
+**Password chars:** A-Z a-z 0-9 ! @ # $ % ^ & * ( ) _ + = [ ] { } | \ ; : , . < > / ? ~ ` ' - and any byte 1..255
+
+- **Not allowed*    : space, "
+- **Workaround*     : wrap in quotes — "-leading-dash"  "has space"
+- **Max length*     : 255
+- **Case sensitive* : yes
 
 Options can be combined in any order. If no options are provided, the
 default configuration is used: all mechanisms enabled, preset `default`.
