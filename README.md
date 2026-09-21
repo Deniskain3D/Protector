@@ -39,7 +39,7 @@ Advantages over classic packers:
 
 Over commercial protectors:
 
-    Small size overhead — the service section occupies less than 2 KB
+    Small size overhead — the service section occupies less than 20 KB
     for a typical file.
 
     Transparent operation — the program behaves identically to the
