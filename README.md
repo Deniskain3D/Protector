@@ -90,8 +90,7 @@ May not work correctly:
 	
     Exotic builds with a non-standard section layout.
 	
-    Files with a very large number of sections (> 32 without using the
-    large preset).
+    Files with a very large number of sections (> 32 without using the "large" preset).
 
 Compatible compilers:
 
