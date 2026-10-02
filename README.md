@@ -138,10 +138,10 @@ protector.exe [options] <target.exe>
           | -nodump            | - disable anti-dump (metadata wipe)            |
           | -nowipe            | - disable IAT metadata wipe                    |
           | -needkey <key>     | - you custom serial on command line            |
-          | --nkoneshot        | - save key after first run (needs -needkey)    |
+          | --nkoneshot        | - save key after first run (need -needkey)     |
           | -limitruns <n>     | - limit runs <1..255> without key              |
-          | ------------------ | (may uses without needkey. (256 - is UNRECOVER |
-		  | ------------------ | mode, after 255 runs))                         |
+          | ------------------ |   (may be use without needkey.(256-is          |
+		  | ------------------ |   UNRECOVER mode, after 255 runs))             |
           | -timetolive <d>    | - days since compile (1..365)                  |
           | -bindmachine       | - bind to registry at first launch             |
           | -fsmall            | - small preset   (< 100 KB)                    |
