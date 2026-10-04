@@ -98,7 +98,7 @@ Tested with output from the following compilers:
 
     FASM, MASM, NASM, MinGW / GCC (native x86), simple MSVC (native x86)
 
-Not Tested, but potentialy worked:
+Not Tested, but potentialy works:
 
 	Borland C++, Watcom C/C++, Delphi (native x86, non-.NET)
     Free Pascal (native x86)
