@@ -96,8 +96,11 @@ Compatible compilers:
 
 Tested with output from the following compilers:
 
-    FASM, MASM, NASM, MinGW / GCC (native x86), MSVC (native x86)
-    Borland C++, Watcom C/C++, Delphi (native x86, non-.NET)
+    FASM, MASM, NASM, MinGW / GCC (native x86), simple MSVC (native x86)
+
+Not Tested, but potentialy worked:
+
+	Borland C++, Watcom C/C++, Delphi (native x86, non-.NET)
     Free Pascal (native x86)
 	    Operation with other compilers is possible but not guaranteed.
 
@@ -171,7 +174,7 @@ protector.exe application.exe
   
 protector.exe -flarge application.exe
 
-  Protection without debugging resistance (for testing)
+  Protection without debugging resistance
 
 protector.exe -notprot application.exe
 
