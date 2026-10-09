@@ -119,7 +119,7 @@ Version history:
 
  **1.7 - Add extended protection options with combine mechanism between them (different License features)**
 
- **1.8 - Bug fixes, add compatibility filepack for new version of binary compilers / add Useful сake - makes live files for run in old OS (like XP) for files which not runs on these os before**
+ **1.8 - Bug fixes, add compatibility filepack for new version of binary compilers / add Useful сake - makes live files for run in old OS (like XP) for files which not runs on these os before / + add correct behavior for layers buffers overflow situation**
 
 Legal Notice:
 
