@@ -158,38 +158,38 @@ protector.exe [options] <target.exe>
 
 **Password chars:** A-Z a-z 0-9 ! @ # $ % ^ & * ( ) _ + = [ ] { } | \ ; : , . < > / ? ~ ` ' - and any byte 1..255
 
-- **Not allowed*    : space, "
-- **Workaround*     : wrap in quotes — "-leading-dash"  "has space"
-- **Max length*     : 255
-- **Case sensitive* : yes
+- *Not allowed*    : space, "
+- *Workaround*     : wrap in quotes — "-leading-dash"  "has space"
+- *Max length*     : 255
+- *Case sensitive* : yes
 
 Options can be combined in any order. If no options are provided, the
 default configuration is used: all mechanisms enabled, preset `default`.
 
   Examples:
 --------------------------------------------------------
-  Protection with default settings
+  - **Protection with default settings:**
  
-protector.exe application.exe
+*protector.exe application.exe*
 
-  Maximum protection for a large file
+  - **Maximum protection for a large file:**
   
-protector.exe -flarge application.exe
+*protector.exe -flarge application.exe*
 
-  Protection without debugging resistance
+  - **Protection without debugging resistance:**
 
-protector.exe -notprot application.exe
+*protector.exe -notprot application.exe*
 
-  Compression only, no other layers
+  - **Compression only, no other layers:**
 
-protector.exe -nobf -nocr -notprot application.exe
+*protector.exe -nobf -nocr -notprot application.exe*
 
-  Fully disabled — useful for compatibility testing
+  - **Fully disabled — useful for compatibility testing:**
 
-protector.exe -nobf -nocomp -nocr -notprot application.exe
+*protector.exe -nobf -nocomp -nocr -notprot application.exe*
 
-Output:
-file named <name>_pro.exe next to the source file.
+**Output:**
+*file named <name>_pro.exe.*
 (original file is not modified).
 
 ----------------------------------------------------------------------------
