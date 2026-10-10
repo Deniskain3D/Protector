@@ -134,28 +134,28 @@ Use it with apply you brain and remember about you risc.
   Syntax:
 protector.exe [options] <target.exe>
 
-          |      Option        |   Description:                                 |
-          |--------------------|------------------------------------------------|
-          | -nobf              | - disable code obfuscation                     |
-          | -nocomp            | - disable compression                          |
-          | -nocr              | - disable file encryption                      |
-          | -notprot           | - disable debug resistance                     |
-          | -nodump            | - disable anti-dump (metadata wipe)            |
-          | -nowipe            | - disable IAT metadata wipe                    |
-          | -needkey <key>     | - you custom serial on command line            |
-          | --nkoneshot        | - save key after first run (need -needkey)     |
-          | -limitruns <n>     | - limit runs <1..255> without key              |
-          | ------------------ |   (may be use without needkey.(256-is          |
-		  | ------------------ |   UNRECOVER mode, after 255 runs))             |
-          | -timetolive <d>    | - days since compile (1..365)                  |
-          | -bindmachine       | - bind to registry at first launch             |
-          | -fsmall            | - small preset   (< 100 KB)                    |
-          | -fdefault          | - default preset (100 KB - 1 MB)               |
-          | -flarge            | - large preset   (1 MB - 50 MB)                |
-
-          You can combine keys: -needkey --nkoneshot -nklimitruns -timetolive
-          Default: all enabled, preset = default.
-
+ |      Option        |   Description:                                 |
+ |--------------------|------------------------------------------------|
+ | -nobf              | - disable code obfuscation                     |
+ | -nocomp            | - disable compression                          |
+ | -nocr              | - disable file encryption                      |
+ | -notprot           | - disable debug resistance                     |
+ | -nodump            | - disable anti-dump (metadata wipe)            |
+ | -nowipe            | - disable IAT metadata wipe                    |
+ | -needkey <key>     | - you custom serial on command line            |
+ | --nkoneshot        | - save key after first run (need -needkey)     |
+ | -limitruns <n>     | - limit runs <1..255> without key              |
+ | ------------------ |   (may be use without needkey.(256-is          |
+ | ------------------ |   UNRECOVER mode, after 255 runs))             |
+ | -timetolive <d>    | - days since compile (1..365)                  |
+ | -bindmachine       | - bind to registry at first launch             |
+ | -fsmall            | - small preset   (< 100 KB)                    |
+ | -fdefault          | - default preset (100 KB - 1 MB)               |
+ | -flarge            | - large preset   (1 MB - 50 MB)                |
+		  
+- **You can combine keys:** *-needkey --nkoneshot -nklimitruns -timetolive*
+- **Default:** *all enabled, preset = default.*
+		  
 **Password chars:** A-Z a-z 0-9 ! @ # $ % ^ & * ( ) _ + = [ ] { } | \ ; : , . < > / ? ~ ` ' - and any byte 1..255
 
 - *Not allowed*    : space, "
