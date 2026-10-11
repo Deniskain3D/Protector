@@ -39,7 +39,7 @@ Advantages over classic packers:
 
 Over commercial protectors:
 
-    Small size overhead — the service section occupies less than 2 KB
+    Small size overhead — the service section occupies less than 20 KB
     for a typical file.
 
     Transparent operation — the program behaves identically to the
@@ -75,7 +75,7 @@ Not supported:
 
 	.NET assemblies — managed code is not native x86.
     
-	Files with an existing TLS section — will be rejected.
+	Files with an existing TLS section — may be rejected.
     
 	Files already protected by other protectors (Themida, VMProtect,
     
