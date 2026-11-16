@@ -1,6 +1,6 @@
  
  
-##                    --- 32bit PE Protector v1.8 ---
+##                    --- 32bit PE Protector v1.9 ---
 ------------------------------------------------------------------------
 A tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
@@ -39,7 +39,7 @@ Advantages over classic packers:
 
 Over commercial protectors:
 
-    Small size overhead — the service section occupies less than 20 KB
+    Small size overhead — the service section occupies less than 2 KB
     for a typical file.
 
     Transparent operation — the program behaves identically to the
@@ -75,7 +75,7 @@ Not supported:
 
 	.NET assemblies — managed code is not native x86.
     
-	Files with an existing TLS section — may be rejected.
+	Files with an existing TLS section — will be rejected.
     
 	Files already protected by other protectors (Themida, VMProtect,
     
@@ -121,6 +121,8 @@ Version history:
 
  **1.8 - Bug fixes, add compatibility filepack for new version of binary compilers / add Useful сake - makes live files for run in old OS (like XP) for files which not runs on these os before / + add correct behavior for layers buffers overflow situation**
 
+ **1.9 - Add integrity file disk/ram check option / small bugfixes**
+
 Legal Notice:
 
 This tool is intended for protecting your own software. Do not using it to
@@ -141,6 +143,7 @@ protector.exe [options] <target.exe>
  | -nocr              | - disable file encryption                      |
  | -notprot           | - disable debug resistance                     |
  | -nodump            | - disable anti-dump (metadata wipe)            |
+ | -nointeg           | - disable integrity file disk/ram check        |
  | -nowipe            | - disable IAT metadata wipe                    |
  | -needkey <key>     | - you custom serial on command line            |
  | --nkoneshot        | - save key after first run (need -needkey)     |
@@ -194,7 +197,7 @@ default configuration is used: all mechanisms enabled, preset `default`.
 
 ----------------------------------------------------------------------------
     License type: shareware
-        Copyright Protector v1.8 (c) 2026 by Den aka Quriositer
+        Copyright Protector v1.9 (c) 2026 by Den aka Quriositer
         Contact:
         My telegram: @Quriositer
         
