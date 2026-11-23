@@ -2,7 +2,7 @@
  
 ##                    --- 32bit PE Protector v1.9 ---
 ------------------------------------------------------------------------
-This is a cmd tool for protecting Windows executable files (PE32) against static
+This is a tiny cmd tool for protecting Windows executable files (PE32) against static
 analysis, unauthorized copying, and modification.
 
  Platform: Windows (x86 / WOW64)
